@@ -27,6 +27,7 @@ dev_dependencies:
 ```dart
 import 'package: integration_test/integration_test.dart';
 import 'main' as app;
+
 void main(){
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   
