@@ -45,6 +45,21 @@ void main(){
 
 Observação: para se verificar valores do ChangeNotifier quando se usa o gerenciador de estado Provider, é necessário criar uma chave para que se possa recuperar o valor do contexto do app.
 
+No arquivo main.dart:
+```dart
+void main(List<String> lista , Key chave){
+  runApp(myApp());
+  
+}
+```
+
+```dart
+class myApp extends StatelessWidget{
+  myApp(chave);
+}
+```
+
+No arquivo de teste de integração:
 ```dart
 import 'package: integration_test/integration_test.dart';
 import 'main' as app;
@@ -55,12 +70,8 @@ void main(){
   testWidgets("descricao"(WidgetTester tester) async {
     chave = GlobalKey();
     app.main([], chave); // Executa o app
-    await tester.pumpAndSettle();
-    await tester.tap(finder.text("nome_botao"));
-    await tester.pumpAndSettle();
-    ...
-    ...
-    ...
+    valor = Provider.of(chave.currentContext.listaDoProvider.last.nome);
+   
   });
 }
 ```
