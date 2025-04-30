@@ -42,3 +42,25 @@ void main(){
   });
 }
 ```
+
+Observação: para se verificar valores do ChangeNotifier quando se usa o gerenciador de estado Provider, é necessário criar uma chave para que se possa recuperar o valor do contexto do app.
+
+```dart
+import 'package: integration_test/integration_test.dart';
+import 'main' as app;
+
+void main(){
+  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  
+  testWidgets("descricao"(WidgetTester tester) async {
+    chave = GlobalKey();
+    app.main([], chave); // Executa o app
+    await tester.pumpAndSettle();
+    await tester.tap(finder.text("nome_botao"));
+    await tester.pumpAndSettle();
+    ...
+    ...
+    ...
+  });
+}
+```
