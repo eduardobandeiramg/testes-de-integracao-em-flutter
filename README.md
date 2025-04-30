@@ -77,3 +77,9 @@ void main(){
 ```
 ## Algumas observações:
 * Testes de integração tipicamente são grandes. Não é possível modularizá-los, porque esse tipo de teste tipicamente é altamente inter-dependente. Ou seja, para que algumas etapas funcionem é necessário que outras ações tenham sido executadas anteriormente.
+
+
+# Métodos de desenvolvimento de software
+* DDD (Domain-driven design) -> O design do app é decidido a partir do seu domínio de aplicação. (foco na interface)
+* TDD (Test-driven development) -> Teste antes, desenvolva depois (foco no teste) 
+* BDD (Behavior-driven development) -> Foco na funcionalidade > teste (foco na funcionalidade) 
