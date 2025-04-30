@@ -43,7 +43,8 @@ void main(){
 }
 ```
 
-Observação: para se verificar valores do ChangeNotifier quando se usa o gerenciador de estado Provider, é necessário criar uma chave para que se possa recuperar o valor do contexto do app.
+## Testes com gerenciamento de estados
+Para se verificar valores do ChangeNotifier quando se usa o gerenciador de estado Provider, é necessário criar uma chave para que se possa recuperar o valor do contexto do app.
 
 No arquivo main.dart:
 ```dart
@@ -51,9 +52,8 @@ void main(List<String> lista , Key chave){
   runApp(myApp());
   
 }
-```
 
-```dart
+
 class myApp extends StatelessWidget{
   myApp(chave);
 }
