@@ -70,7 +70,7 @@ void main(){
   testWidgets("descricao"(WidgetTester tester) async {
     chave = GlobalKey();
     app.main([], chave); // Executa o app
-    valor = Provider.of(chave.currentContext.listaDoProvider.last.nome);
+    valor = Provider<ClasseDoChangeNotifier>.of(chave.currentContext.listaDoProvider.last.nome);
    
   });
 }
