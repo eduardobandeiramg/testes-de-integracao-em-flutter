@@ -75,3 +75,5 @@ void main(){
   });
 }
 ```
+## Algumas observações:
+* Testes de integração tipicamente são grandes. Não é possível modularizá-los, porque esse tipo de teste tipicamente é altamente inter-dependente. Ou seja, para que algumas etapas funcionem é necessário que outras ações tenham sido executadas anteriormente.
