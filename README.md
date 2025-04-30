@@ -4,7 +4,7 @@ Em Flutter, testes de unidade têm como objetivo verificar o comportamento de a�
 
 Caso se queira testar o comportamento de widgets, ou seja, de componentes mais complexos do aplicativo, são utilizados os testes de widget. 
 
-Mas existe um cenário em que é necessário testar os comportamentos do aplicativo de forma mais ampla e inter-dependente. Por exemplo, em casos onde acontecem atualizações de valores nas "Single source of truths" ou para verificar as interfaces esperadas em uma navegação simulada do usuário.
+Mas existe um cenário em que é necessário testar os comportamentos do aplicativo de forma mais ampla e inter-dependente. Por exemplo, em casos onde acontecem atualizações de valores nas "Single source of truths" ou para verificar as interfaces esperadas e comportamentos em uma navegação simulada do usuário.
 Nesses casos, onde se faz uso de alguma forma de gerenciamento de estados, é necessário usar *testes de integração*.
 
 ## Como fazer testes de integração
